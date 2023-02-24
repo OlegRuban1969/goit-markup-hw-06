@@ -477,9 +477,9 @@ address {
     fill: var(--clr-base);
 }
 .footer-third {
-     display: flex;
-     margin-left: 80px;
-     align-items: center;  
+    display: flex;
+    margin-left: 80px;
+    align-items: center;  
 }
 .footer-btn {
     position: relative;
@@ -513,7 +513,15 @@ address {
 }
 .footer-form-input {
     padding: 8px auto 8px 16px;
+    width: 264px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.0x;
+    letter-spacing: 0.04em;
     font-family: inherit;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--clr-base-hero-ftr);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 }
