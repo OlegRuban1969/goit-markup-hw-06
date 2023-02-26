@@ -506,7 +506,7 @@ address {
     display: flex;
 }
 .footer-form-input {
-    padding: 8px auto 8px 16px;
+    padding: 8px 16px;
     width: 264px;
     height: 40px;
     font-weight: 400;
@@ -665,6 +665,7 @@ address {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 72px 24px 24px;
     min-width: 408px;
     min-height: 576px;
     background-color:  #FCFCFC;;
@@ -694,5 +695,78 @@ address {
     background-color: var(--clr-btn-hero-h-f);
     fill: var(--clr-base);
 }
+.form-title {
+    margin-top: 0;
+    margin-bottom: 34px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.input-username-title {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+.input-username {
+    display: block;
+    position: relative;
+    width: 360px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.0x;
+    letter-spacing: 0.04em;
+    font-family: inherit;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #FCFCFC;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+.input-username-icon {
+    position: absolute;
+    top: 11px;
+    left: 16px;
+}
+.input-phone {
 
+}
+.input-phone-icon {
+
+}
+.input-email {
+    padding: 8px 16px;
+    width: 360px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.0x;
+    letter-spacing: 0.04em;
+    font-family: inherit;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #FCFCFC;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+.input-email-icon {
+
+}
+.comment-user {
+
+}
+.accept-terms-cndtns {
+
+}
+.modal-user-btn {
+
+}
 
