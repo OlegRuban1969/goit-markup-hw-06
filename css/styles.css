@@ -711,6 +711,7 @@ address {
 }
 .input-username-title {
     position: relative;
+    margin: 0 auto 0;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.166;
@@ -727,19 +728,38 @@ address {
     line-height: 2.0;
     letter-spacing: 0.04em;
     font-family: inherit;
-    color: rgba(255, 255, 255, 0.6);
     background-color: #FCFCFC;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
-.input-username-icon {
-    position: absolute;
-    top: 11px;
-    left: 16px;
+.input-username-icon,
+.input-phone-icon,
+.input-email-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
 }
+.input-username:focus,
+.input-phone:focus,
+.input-email:focus,
+.comment-user:focus {
+    border: 1px solid var(--back-team-social);
+    outline: none;
+    fill: var(--back-team-social);
+  }
+.input-username-icon:focus
+.input-phone-icon:focus,
+.input-email-icon:focus {
+    fill: var(--back-team-social);
+}  
 .input-phone-title {
     position: relative;
-    margin-top: 8px;
+    margin: 8px auto 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
 }
 .input-phone {
     display: block;
@@ -747,14 +767,18 @@ address {
     height: 40px;
     margin-top: 4px;
     margin-bottom: 0;
-}
-.input-phone-icon {
-position: absolute;
-left: 16px;
+    background-color: #FCFCFC;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
 .input-email-title {
     position: relative;
-    margin-top: 8px;
+    margin: 8px auto 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
 }
 .input-email {
     display: block;
@@ -770,22 +794,23 @@ left: 16px;
     font-family: inherit;
     color: rgba(255, 255, 255, 0.6);
     background-color: #FCFCFC;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
-.input-email-icon {
-    position: absolute;
-}
 .comment-user-title {
-    margin-top: 8px;
-    margin-bottom: 16px;
+    margin: 8px auto 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
 }
 .comment-user {
     display: block;
     padding: 8px 16px;
     margin-top: 4px;
-    width: 360px;
-    height: 120px;
+    min-width: 360px;
+    min-height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
