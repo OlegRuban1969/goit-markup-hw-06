@@ -516,7 +516,7 @@ address {
     letter-spacing: 0.04em;
     font-family: inherit;
     color: rgba(255, 255, 255, 0.6);
-    background-color: var(--clr-base-hero-ftr);
+    background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 }
@@ -713,9 +713,10 @@ address {
 .input-user {
     display: block;
     margin-top: 4px;
+    padding-left: 38px;
     width: 360px;
     height: 40px;
-    background-color: #FCFCFC;
+    background-color: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color 250ms var(--time-transition);
@@ -724,14 +725,19 @@ address {
     display: block;
     padding: 8px 16px;
     margin-top: 4px;
+    margin-bottom: 16px;
     width: 360px;
     height: 120px;
+    resize: none;
+    background-color: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     color: rgba(117, 117, 117, 0.5);
     transition: border-color 250ms var(--time-transition);
 }
-
+.input-user:focus + .input-icon {
+    fill: var(--back-team-social);
+  }
 .input-user:focus,
 .comment-user:focus {
     border: 1px solid var(--back-team-social);
@@ -778,19 +784,20 @@ address {
     letter-spacing: 0.04em;
     color: var(--clr-input-user);
 }
-
-.accept-terms-cndtns {
-
-}
 .input-chekbox {
-    width: 338px;
-    height: 16px;
+    max-width: 338px;
+    height: auto;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.04em;
     color: #757575;
-
+    border: 1.25px solid var(--clr-base-hero-ftr);
+    border-radius: 2px;
+}
+.input-chekbox:focus {
+    background-color: var(--success-customer);
+    border: 1.25px solid var(--success-customer);
 }
 .modal-user-btn {
     display: flex;
