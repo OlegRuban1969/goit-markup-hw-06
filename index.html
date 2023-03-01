@@ -463,22 +463,22 @@
             </svg>
           </span>
           </label>
-          
           <label class="comment-user-title">
             Comment
             <textarea class="comment-user" name="comment" rows="" placeholder="Text input"></textarea>
           </label>
-          
-          <label>
-            <input class="input-chekbox" type="checkbox" name="accept" />
-            I accept the terms and conditions of the
-            <a class="accept-terms-cndtns" href="#">Privacy Policy</a>
-          </label>
-          
+          <input
+            id="user-privpol"
+            class="modalform-check hidden"
+            type="checkbox"
+            name="user_policy"
+          />
+          <label for="user-privpol" class="modalform-chek-desc"
+            >I accept the terms and conditions of the&nbsp;
+            <a class="privpol-link" href="">Privacy Policy</a></label>
           <button class="modal-user-btn" type="submit">Send</button>
         </div>
       </form>
-
     </div>
   </div>
   <script src="./js/modal.js"></script>

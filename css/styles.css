@@ -754,9 +754,6 @@ address {
     transform: translate(-50%, -50%);
     color: currentColor;
  }
-.input-icon:focus {
-    fill: var(--back-team-social);
-} 
 .input-username-title {
     margin: 0 auto 0;
     font-family: inherit;
@@ -784,26 +781,45 @@ address {
     letter-spacing: 0.04em;
     color: var(--clr-input-user);
 }
-.input-chekbox {
-    max-width: 338px;
-    height: auto;
+.modalform-chek-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.166;
+    line-height: 1.33;
     letter-spacing: 0.04em;
     color: #757575;
+}
+.privpol-link {
+    color: var(--iris);
+}
+.modalform-chek-desc::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
     border: 1.25px solid var(--clr-base-hero-ftr);
     border-radius: 2px;
+    cursor: pointer;
+    transition: border-color, background-color 250ms var(--time-transition);
 }
-.input-chekbox:focus {
+.modalform-check:checked + .modalform-chek-desc::before {
     background-color: var(--success-customer);
-    border: 1.25px solid var(--success-customer);
+    border-color: var(--success-customer);
+    background-image: url(../images/vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.modalform-check:focus + .modalform-chek-desc::before {
+    border-color: var(--success-customer);
 }
 .modal-user-btn {
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 24px auto 0;
+    margin: 0 auto 0;
     padding: 16px 32px;
     width: 105px;
     height: 24px;
