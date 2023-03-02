@@ -731,7 +731,6 @@ address {
     display: block;
     padding: 8px 16px;
     margin-top: 4px;
-    margin-bottom: 16px;
     width: 360px;
     height: 120px;
     resize: none;
@@ -757,7 +756,7 @@ address {
     position: absolute;
     top: 50%;
     left: 16px;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     color: currentColor;
  }
 .input-username-title {
@@ -765,7 +764,7 @@ address {
     font-family: inherit;
     font-weight: 400;
     font-size: 12px;
-    line-height: 2.0;
+    line-height: 1.166;
     letter-spacing: 0.04em;
     color: var(--clr-input-user);
 }
@@ -780,10 +779,11 @@ address {
 }
 .comment-user-title {
     display: block;
-    margin-bottom: 4px;
+    margin-top: 8px;
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.166;
     letter-spacing: 0.04em;
     color: var(--clr-input-user);
 }
@@ -823,6 +823,7 @@ address {
 }
 .modal-user-btn {
     width: 169px;
+    height: auto;
     text-align: center;
     margin: 0 auto 0;
     padding: 16px 32px;
