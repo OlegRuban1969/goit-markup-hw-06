@@ -696,6 +696,12 @@ address {
     background-color: var(--clr-btn-hero-h-f);
     fill: var(--clr-base);
 }
+.modal-close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .form-title {
     margin-top: 0;
     margin-bottom: 16px;
@@ -816,7 +822,7 @@ address {
     border-color: var(--success-customer);
 }
 .modal-user-btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     text-align: center;
     margin: 0 auto 0;
