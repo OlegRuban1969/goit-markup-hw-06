@@ -803,7 +803,7 @@ address {
     color: #757575;
 }
 .privpol-link {
-    color: var(--iris);
+    color: var(--text-logo-base-btn-hero);
 }
 .modalform-chek-desc::before {
     content: '';
