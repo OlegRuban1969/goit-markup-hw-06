@@ -718,14 +718,13 @@ address {
 }
 .input-user {
     display: block;
-    margin-top: 4px;
+    
     padding-left: 38px;
     width: 360px;
     height: 40px;
     background-color: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color 250ms var(--time-transition);
 }
 .comment-user {
     display: block;
@@ -737,8 +736,13 @@ address {
     background-color: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    color: rgba(117, 117, 117, 0.5);
-    transition: border-color 250ms var(--time-transition);
+}
+.comment-user::placeholder {     
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);   
 }
 .input-user:focus + .input-icon {
     fill: var(--back-team-social);
@@ -751,6 +755,7 @@ address {
 .input-wraper {
     position: relative;
     display: block;
+    margin-top: 4px;
 }
 .input-icon {
     position: absolute;
